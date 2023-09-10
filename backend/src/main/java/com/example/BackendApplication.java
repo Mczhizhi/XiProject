@@ -1,13 +1,13 @@
-package com.example.xiproject;
+package com.example;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class XiProjectApplication {
+public class BackendApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(XiProjectApplication.class, args);
+        SpringApplication.run(BackendApplication.class, args);
     }
 
 }

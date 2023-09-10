@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdffa00a-0355-4610-bf7c-69ae32f672a4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/xiproject/Control/UserLoginController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/xiproject/Control/utils/R.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/xiproject/Data/UserLogin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/xiproject/DataDao/UserLoginDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/xiproject/Server/ServerInte.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/xiproject/ServerDao/Server.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/xiproject/XiProjectApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/xiproject/config/CORSConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/xiproject/config/MPConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/xiproject/XiProjectApplicationTests.java" beforeDir="false" />
-    </list>
+    <list default="true" id="cdffa00a-0355-4610-bf7c-69ae32f672a4" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,6 +34,7 @@
       <option name="presentableId" value="Default" />
       <updated>1694338058540</updated>
       <workItem from="1694338061890" duration="260000" />
+      <workItem from="1694340349384" duration="12000" />
     </task>
     <servers />
   </component>

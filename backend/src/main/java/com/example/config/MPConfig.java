@@ -1,4 +1,4 @@
-package com.example.xiproject.config;
+package com.example.config;
 
 import com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.inner.PaginationInnerInterceptor;

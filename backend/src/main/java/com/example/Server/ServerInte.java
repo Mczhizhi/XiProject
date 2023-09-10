@@ -1,7 +1,7 @@
-package com.example.xiproject.Server;
+package com.example.Server;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.example.xiproject.Data.UserLogin;
+import com.example.Data.UserLogin;
 
 public interface ServerInte extends IService<UserLogin> {
 }

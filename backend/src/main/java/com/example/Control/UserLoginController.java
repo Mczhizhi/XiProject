@@ -1,9 +1,9 @@
-package com.example.xiproject.Control;
+package com.example.Control;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.example.xiproject.Control.utils.R;
-import com.example.xiproject.Data.UserLogin;
-import com.example.xiproject.Server.ServerInte;
+import com.example.Control.utils.R;
+import com.example.Data.UserLogin;
+import com.example.Server.ServerInte;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

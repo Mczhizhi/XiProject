@@ -1,4 +1,4 @@
-package com.example.xiproject.Data;
+package com.example.Data;
 import lombok.Data;
 
 @Data

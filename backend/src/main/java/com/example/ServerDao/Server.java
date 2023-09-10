@@ -1,11 +1,11 @@
-package com.example.xiproject.ServerDao;
+package com.example.ServerDao;
 
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.example.xiproject.Data.UserLogin;
-import com.example.xiproject.DataDao.UserLoginDao;
-import com.example.xiproject.Server.ServerInte;
+import com.example.Data.UserLogin;
+import com.example.DataDao.UserLoginDao;
+import com.example.Server.ServerInte;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
