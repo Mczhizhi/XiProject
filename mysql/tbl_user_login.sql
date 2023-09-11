@@ -42,6 +42,6 @@ INSERT INTO `tbl_user_login` VALUES (7, 'Nishimura Ayato', 'AL815UZpoc', 'rlHbFG
 INSERT INTO `tbl_user_login` VALUES (8, 'Jeffery Thompson', 'mbZXT2j8Um', 'BzRnvSfCkZ');
 INSERT INTO `tbl_user_login` VALUES (9, 'Tang Anqi', 'Rc4JYu7CJm', 'J6YgVwAa4r');
 INSERT INTO `tbl_user_login` VALUES (10, 'Bryan Morgan', 'o6UZFMSApu', 'Aui9bDZiTV');
-INSERT INTO `tbl_user_login` VALUES (11, 'Mczhizhi', 'Mczhizhi', 'weiye168');
+INSERT INTO `tbl_user_login` VALUES (11, '123', '123', '123');
 
 SET FOREIGN_KEY_CHECKS = 1;

@@ -4,12 +4,19 @@
     :style="{ backgroundImage: 'url(' + backGroundUrl.path + ')' }"
   >
     <div class="view-container">
-      <el-form>
-        <el-form-item label="用户名">
-          <el-input v-model="formData.user"></el-input>
+      <el-form :model="formData" :rules="rules" ref="fromref">
+        <el-form-item label="用户名" prop="user">
+          <el-input
+            v-model="formData.user"
+            placeholder="请输入用户名"
+          ></el-input>
         </el-form-item>
-        <el-form-item label="密码">
-          <el-input v-model="formData.password"></el-input>
+        <el-form-item label="密码" prop="password">
+          <el-input
+            type="password"
+            v-model="formData.password"
+            placeholder="请输入密码"
+          ></el-input>
         </el-form-item>
       </el-form>
 
@@ -21,8 +28,10 @@
 </template>
 
 <script setup lang="ts">
-import { reactive } from 'vue'
-import axios from 'axios'
+import { reactive, ref } from 'vue'
+import { LoginService } from '../../api/login.js'
+const fromref = ref()
+// import axios from 'axios'
 
 const formData = reactive({
   user: '',
@@ -33,19 +42,47 @@ const backGroundUrl = reactive({
   path: '/Image/bg.jpg'
 })
 
-const Login = () => {
-  axios
-    .get('http://localhost/user/' + formData.user + '/' + formData.password)
-    .then((ref) => {
-      if (ref.data == false) alert('Login failed')
-      else {
-        alert('Login succeeded')
-      }
-    })
-    .catch((error) => {
-      if (error.message == 'Network Error') alert('服务器错误,请联系管理员')
-      else alert('未知错误，请稍后重试')
-    })
+const Login = async () => {
+  await fromref.value.validate()
+  const response = await LoginService(formData.user, formData.password)
+  if (response.data) {
+    alert('success')
+  } else {
+    alert('error')
+  }
+}
+// const Login = () => {
+//   if (formData.user == '' || formData.password == '') {
+//     alert('please enter data')
+//   } else {
+//     axios
+//       .get('http://localhost/user/' + formData.user + '/' + formData.password)
+//       .then((ref) => {
+//         if (ref.data == false) alert('Login failed')
+//         else {
+//           alert('Login succeeded')
+//         }
+//       })
+//       .catch((error) => {
+//         if (error.message == 'Network Error') alert('服务器错误,请联系管理员')
+//         else alert('未知错误，请稍后重试')
+//       })
+//   }
+// }
+
+const rules = {
+  user: [
+    { required: true, message: '请输入用户名', trigger: 'blur' },
+    { min: 5, max: 10, message: '用户名必须是5-10位的字符', trigger: 'blur' }
+  ],
+  password: [
+    { required: true, message: '请输入密码', trigger: 'blur' },
+    {
+      pattern: /^\S{6,15}$/,
+      message: '密码必须是6-15位的非空字符',
+      trigger: 'blur'
+    }
+  ]
 }
 </script>
 
